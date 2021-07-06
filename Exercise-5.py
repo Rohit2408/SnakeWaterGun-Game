@@ -12,16 +12,15 @@ def tie():
 
     tie_match = ["Awkward Cricket.mp3"]
 
-if __name__ == "__main__":
-    print("\n Welcome to the Snake Water Gun game!\n")
-    print("Game Rules:")
-    print("1. Snake and Water: Snake wins \n2. Water and Gun: Water wins \n3. Gun and Snake: Gun Wins")
+print("\n Welcome to the Snake Water Gun game!\n")
+print("Game Rules:")
+print("1. Snake and Water: Snake wins \n2. Water and Gun: Water wins \n3. Gun and Snake: Gun Wins")
 
-    attempts = 1
-    your_point = 0
-    computer_point = 0
+attempts = 1
+your_point = 0
+computer_point = 0
 
-    while(attempts<=5):
+while(attempts<=5):
 
         lst = ["s", "w", "g"]
         ran = random.choice(lst)
@@ -83,13 +82,13 @@ if __name__ == "__main__":
 
         print("\n Number of guesses left: {}".format(51-attempts))
         attempts = attempts+1
-    if(attempts>5):
+if(attempts>5):
         print("GAME OVER!")
 
-    if computer_point > your_point:
+if computer_point > your_point:
         print("\nComputer wins and you lose!")
 
-    if computer_point < your_point:
+if computer_point < your_point:
         print("\nYou win and the computer loses!")
 
     print(f"\nYour points are {your_point} and Computer's points are {computer_point}!\n")
