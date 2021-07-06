@@ -91,7 +91,7 @@ if computer_point > your_point:
 if computer_point < your_point:
         print("\nYou win and the computer loses!")
 
-    print(f"\nYour points are {your_point} and Computer's points are {computer_point}!\n")
+print(f"\nYour points are {your_point} and Computer's points are {computer_point}!\n")
 
 
 
